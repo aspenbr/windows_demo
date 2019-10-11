@@ -6,9 +6,8 @@
 
       - name: run netstat and return Ethernet stats 
         win_command: netstat -e
-        register: netstat
+        register: saida_netstat
     
       - name: debug comando 
         debug: 
-          msg: |
-           var = netstat
+          msg: Saida do comando "{{ saida_netstat }}"
