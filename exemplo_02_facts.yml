@@ -11,4 +11,4 @@
                  ip externo da instancia = {{ ec2_ip_address }}
                  regiao da aws = {{ ec2_region }}
                  tipo da instnacia = {{ ec2_instance_type }} 
-                 os = {{ os_name }}
+                 os = {{ ansible_facts.os_name }}
