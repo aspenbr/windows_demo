@@ -7,8 +7,4 @@
       - name: "Ansible | List all known variables and facts"
         debug: 
           msg: | 
-                FACTS DEFAULT 
-                arquitetura do ansible = {{ ansible_architecture }} 
-                env aws = {{ group_names }} 
-                endereco ip externo = {{ ec2_ip_address }}
-                windows versao = {{ os_name }}
+                 Arquitetura = {{ ansible_architecture }} 
