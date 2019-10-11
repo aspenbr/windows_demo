@@ -8,3 +8,7 @@
         debug: 
           msg: | 
                  Arquitetura = {{ ansible_architecture }} 
+                 ip externo da instancia = {{ ec2_ip_address }}
+                 regiao da aws = {{ ec2_region }}
+                 tipo da instnacia = {{ ec2_instance_type }} 
+                 os = {{ os_name }}
