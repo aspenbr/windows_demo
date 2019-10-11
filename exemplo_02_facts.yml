@@ -1,0 +1,15 @@
+---
+- 
+    name: Setup Facts Windows -2 
+    hosts: all 
+    tasks: 
+
+      - name: "Ansible | List all known variables and facts"
+        debug: 
+          msg: | 
+                FACTS DEFAULT 
+                arquitetura do ansible = {{ ansible_architecture }} 
+                aws = {{ group_names }} 
+                endereco ip externo = {{ ec2_ip_address }}
+                kernel windows = {{ kernel }}
+                windows versao = {{ os_name }}
