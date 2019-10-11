@@ -9,7 +9,7 @@
           msg: | 
                 FACTS DEFAULT 
                 arquitetura do ansible = {{ ansible_architecture }} 
-                aws = {{ group_names }} 
+                env aws = {{ group_names }} 
                 endereco ip externo = {{ ec2_ip_address }}
-                kernel windows = {{ kernel }}
+                #kernel windows = {{ kernel }}
                 windows versao = {{ os_name }}
