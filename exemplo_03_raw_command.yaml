@@ -1,0 +1,14 @@
+---
+- 
+    name: Teste Windows RAW Command 
+    hosts: all 
+    tasks: 
+
+      - name: run netstat and return Ethernet stats 
+        win_command: netstat -e
+        register: netstat
+    
+      - name: debug comando 
+        debug: 
+          msg: |
+           var = netstat
