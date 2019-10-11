@@ -1,0 +1,9 @@
+---
+- 
+    name: Setup Facts Windows
+    hosts: all 
+    tasks: 
+
+      - name: "Ansible | List all known variables and facts"
+        debug: 
+          var: hostvars[inventory_hostname]
